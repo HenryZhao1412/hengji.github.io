@@ -78,13 +78,19 @@ The next step is to download the cuDNN archive, this is a GPU-accelerated librar
 
 After we opened this link, the page should be like Figure 5.
 
+![cuDNN](blog-2-images/image5.png)
 
+Figure 5: The page of cuDNN
 
+### 6. Install Pytorch
 
+The link for installing Pytroch is here:
 
+ - [Pytorch Download](https://pytorch.org/get-started/locally/)
 
+After we clicked the link, the page should be like Figure 6.
 
-
+![Pytorch-install-page]()
 
 
 
