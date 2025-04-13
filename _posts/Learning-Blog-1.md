@@ -20,3 +20,7 @@ To the code upon, it takes two numbers as input and do the addition operation. W
 ### Weight
 
 Weights are variables, the notebook take a example of the dog classifier, it takes images pixels as inputs, the weights are values define how the program will operate. The structure is shown in the following figure.
+
+![Weight](image2.png)
+
+
