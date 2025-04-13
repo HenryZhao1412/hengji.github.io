@@ -50,12 +50,13 @@ Anaconda is to install all deep learning packages, we can download here:
 
  - [Anaconda / Miniconda](https://www.anaconda.com/download/success)
 
-After we clicked the link, the page should be like:
+After we clicked the link, the page should be like the following Figure 3:
 
+![Anaconda / Miniconda Download Page](blog-2-images/image3.png)
 
+Figure 3: The Anaconda / Miniconda download page.
 
-
-
+My system is Windows 11, so I selected the windows download package.
 
 
 
