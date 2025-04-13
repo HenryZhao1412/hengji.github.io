@@ -100,7 +100,18 @@ We need to select the correct version of Pytorch, the version should be the same
 
 Figure 7: Choose the correct version.
 
+Lastly, we can use the following Python code to check whether our GPU can work normally.
 
+```python
+import torch
+
+print("Number of GPU: ", torch.cuda.device_count())
+print("GPU Name: ", torch.cuda.get_device_name())
+
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
+```
 
 
 
