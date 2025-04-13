@@ -49,8 +49,19 @@ We might find that this the Figure 4 is similar to Figure 1, this is because a t
 
 In this notebook, it also introduced the trainging of a dog & cat classifier, there are only several lines of code for this training, but every step can make reader learn a lot about deep learning.
 
+Here I will explain the code in my words. This first line of the training code is:
 
+```python
+from fastai.vision.all import *
+```
 
+This step can help us import the libraries we need in the training process. Note that we cannot just write 
+
+```python
+from fastai import *
+```
+
+This is because the functions we need is under the class vision, fastai is more like a top level of the function we need, so if we just import fastai library, we will fail in our training.
 
 
 
