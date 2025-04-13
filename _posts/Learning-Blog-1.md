@@ -109,7 +109,7 @@ The first parameter `dls` is the data loader we just built, the images, training
 
 The second parameter in the function is `resnet34` is a pretrained model, the number 34 means there are 34 layers in this architecture. `resnet34` was trained across 1.3 million photos, it can be used to identify the image features.
 
-
+The third parameter `metrics=error_rate` is the evaluation indicator, this will tell you the performance of the trained model is good or not.
 
 
 
