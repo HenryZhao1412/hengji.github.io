@@ -70,8 +70,14 @@ path = untar_data(URLs.PETS)/'images'
 ```
 This line can help us download the dataset we need for the training, the variable `path` is the location address of the images, the model will find the images according to this address.
 
+The next step is to give the data a "label", the classifier do not know which image is cat and which image is dog, so we need to "tell" the model how to judge which one is cat and which is dog. The method is to observe its filename. The code for this is:
 
+```python
+def is_cat(x):
+    return x[0].isupper()
+```
 
+The rule for naming the images is: if the image is about a cat, the first letter of the file will be capitalized, then we can easily label our images according to the filename.
 
 
 
