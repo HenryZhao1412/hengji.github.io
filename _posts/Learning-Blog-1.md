@@ -95,7 +95,7 @@ The third parameter `valid_pct=0.2` is meaning that 20% images in the dataset wi
 
 The fourth parameter `seed=42` will make sure every time we train the model, it can give the model the same training set and the same validation set. This is important because if the model performs not evert well, we can set the same seed to another model and check if this is the problem of images in training set or the validation set.
 
-
+The fifth parameter is `label_func=is_cat`, this is telling the model what the image in processing contains, this is an image about cat or dog. 
 
 
 
