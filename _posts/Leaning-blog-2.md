@@ -38,8 +38,19 @@ Figure 2: The NVIDIA Driver download website page.
 
 According to our devices, we can select the suitable Driver to download. My GPU is `NVIDIA GeForce RTX 3060 Laptop GPU`, just select the one we have and then choose the system we are using and then download it. Remember to download the latest version of Driver.
 
+### 2. Visual Stdio C++
 
+Visual Stdio is the what we used to write the code, and C++ is also required to be installed. So remember to select the C++ options. I skiped this step because when I setup GPU, the Visual Stdio has already been installed in my laptop. Here is the address for downloading Visual Stdio
 
+ - [Visual Stido Code](https://code.visualstudio.com/)
+
+### 3. Anaconda / Miniconda
+
+Anaconda is to install all deep learning packages, we can download here:
+
+ - [Anaconda / Miniconda](https://www.anaconda.com/download/success)
+
+After we clicked the link, the page should be like:
 
 
 
