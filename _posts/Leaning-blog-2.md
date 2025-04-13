@@ -66,6 +66,9 @@ The next step is to download CUDA, when we are doing this step, it is very impor
 
 This page should be like Figure 4.
 
+![CUDA-Toolkit-archive](blog-2-images/image4.png)
+
+Figure 4: The CUDA Toolkit Download page.
 
 
 
