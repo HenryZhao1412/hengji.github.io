@@ -28,7 +28,7 @@ Then I will talk my learning process of setup the GPU.
 ### 1. NVIDIA Video Driver.
 
 The GPU driver is necessary if we want to use the GPU. The address is here:
- - [NVIDIA GPU Drive Download]()
+ - [NVIDIA GPU Drive Download](https://www.nvidia.com/en-us/drivers/)
 
 
 
