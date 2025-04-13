@@ -99,8 +99,13 @@ The fifth parameter is `label_func=is_cat`, this is telling the model what the i
 
 The final parameter `item_tfms=Resize(224)` is to resize the size of the image to 224x224 for sending the images into the model.
 
+The next step is to build the model and send the data loader into the model. The code is:
 
+```python
+learn = vision_learner(dls, resnet34, metrics=error_rate)
+```
 
+The first parameter `dls` is the data loader we just built, the images, training set and validation are all prepared well for the model training.
 
 
 
