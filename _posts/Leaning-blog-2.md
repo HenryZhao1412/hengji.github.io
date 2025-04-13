@@ -58,6 +58,15 @@ Figure 3: The Anaconda / Miniconda download page.
 
 My system is Windows 11, so I selected the windows download package.
 
+### 4. CUDA Toolkit
+
+The next step is to download CUDA, when we are doing this step, it is very important to remember the version we downloaded, this will influence the Pytorch version we need to download. The link is here:
+
+ - [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
+
+This page should be like Figure 4.
+
+
 
 
 
