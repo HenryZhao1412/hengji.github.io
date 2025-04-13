@@ -107,7 +107,7 @@ learn = vision_learner(dls, resnet34, metrics=error_rate)
 
 The first parameter `dls` is the data loader we just built, the images, training set and validation are all prepared well for the model training.
 
-
+The second parameter in the function is `resnet34` is a pretrained model, the number 34 means there are 34 layers in this architecture. `resnet34` was trained across 1.3 million photos, it can be used to identify the image features.
 
 
 
