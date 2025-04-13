@@ -112,9 +112,15 @@ print("GPU Name: ", torch.cuda.get_device_name())
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 ```
+Figure 8 is the result of my laptop runing the code, the GPU type is the same as I said before.
 
+![python-running-result](blog-2-images/image8.png)
 
+Figure 8: The results of running the Python code.
 
+We find that the GPU can work for training our model in Visual Stdio Code now.
+
+Previously, training 2 epoches for `01-intro.ipynb` dog & cat classifier spent me about 15 minutes on training by using CPU, but now only spend around 2 minitus and 30 seconds for me to train the same code. It can save plenty of time.
 
 
 
