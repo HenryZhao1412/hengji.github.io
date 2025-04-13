@@ -28,8 +28,9 @@ During the machine learning model process, weight should be able to be adjusted 
 
 ![Weight-update](image3.png)
 
+### After the training process
 
-
+After we finished the training of the model, the model should be able to perform the actions we required it to do. We give the model input, then the model give us output. This process is shown in the following figure.
 
 
 
