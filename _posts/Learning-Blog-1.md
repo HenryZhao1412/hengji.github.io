@@ -79,9 +79,19 @@ def is_cat(x):
 
 The rule for naming the images is: if the image is about a cat, the first letter of the file will be capitalized, then we can easily label our images according to the filename.
 
+The next step is to build the loader for training. The corresponding code is:
 
+```python
+dls = ImageDataLoaders.from_name_func(
+    path, get_image_file(path), valid_pct=0.2, seed=42,
+    label_func=is_cat, item_tfms=Resize(224))
+```
 
+The first parameter in this data loader is telling the model where to find the training images.
 
+The second parameter `get_image_files(path)` is helping the model to get the path for every images.
+
+The third parameter `valid_pct=0.2` is meaning that 20% images in the dataset will be used as the validation set, and the rest 80% will be used as the training set. Validation set is necessary because it can be used to monitor the performance of the model.
 
 
 
