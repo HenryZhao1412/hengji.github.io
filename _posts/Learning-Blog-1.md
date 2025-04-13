@@ -97,8 +97,7 @@ The fourth parameter `seed=42` will make sure every time we train the model, it 
 
 The fifth parameter is `label_func=is_cat`, this is telling the model what the image in processing contains, this is an image about cat or dog. 
 
-
-
+The final parameter `item_tfms=Resize(224)` is to resize the size of the image to 224x224 for sending the images into the model.
 
 
 
