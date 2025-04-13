@@ -96,9 +96,9 @@ Figure 6: The Pytorch Download Page
 
 We need to select the correct version of Pytorch, the version should be the same as the Toolkit we just downloaded, the version I selected was 12.8, it is not available in the `Stable (2.6.0)` choice in `PyTorch Build` sublist. Then we should choose the `Preview (Nightly)` choice. Just as Figure 7.
 
+![Choose-right-version-of-Pytorch](blog-2-images/image7.png)
 
-
-
+Figure 7: Choose the correct version.
 
 
 
