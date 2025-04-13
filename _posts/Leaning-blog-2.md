@@ -90,9 +90,11 @@ The link for installing Pytroch is here:
 
 After we clicked the link, the page should be like Figure 6.
 
-![Pytorch-install-page]()
+![Pytorch-install-page](blog-2-images/image6.png)
 
+Figure 6: The Pytorch Download Page
 
+We need to select the correct version of Pytorch, the version should be the same as the Toolkit we just downloaded, the version I selected was 12.8, it is not available in the `Stable (2.6.0)` choice in `PyTorch Build` sublist. Then we should choose the `Preview (Nightly)` choice. Just as Figure 7.
 
 
 
