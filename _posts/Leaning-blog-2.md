@@ -30,7 +30,13 @@ Then I will talk my learning process of setup the GPU.
 The GPU driver is necessary if we want to use the GPU. The address is here:
  - [NVIDIA GPU Drive Download](https://www.nvidia.com/en-us/drivers/)
 
+After we opened the link, the website should be like Figure 2.
 
+![NVIDIA-Driver_Download](blog-2-images/image2.png)
+
+Figure 2: The NVIDIA Driver download website page.
+
+According to our devices, we can select the suitable Driver to download. My GPU is `NVIDIA GeForce RTX 3060 Laptop GPU`, just select the one we have and then choose the system we are using and then download it.
 
 
 
