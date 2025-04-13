@@ -1,6 +1,6 @@
 # Hengji's learning blog about Deep Learning & Fastai
 
-The learning after reading the fastbook "01_intro.ipynb"
+The learning after reading the fastbook "01_intro.ipynb", this contains my understand to the 01_intro.ipynb, and I will explain it in my words.
 
 ## Maching Learning
 
