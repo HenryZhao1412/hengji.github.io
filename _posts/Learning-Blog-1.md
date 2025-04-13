@@ -45,7 +45,9 @@ Figure 4: Apply the model finished training.
 We might find that this the Figure 4 is similar to Figure 1, this is because a trained model can be treated just like a regular computer program.
 
 
+## The training process of the dog & cat classifier.
 
+In this notebook, it also introduced the trainging of a dog & cat classifier, there are only several lines of code for this training, but every step can make reader learn a lot about deep learning.
 
 
 
