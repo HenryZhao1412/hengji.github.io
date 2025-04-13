@@ -118,9 +118,13 @@ learn.fine_tune(1)
 ```
 This is the training process, the parameter inside the function '1' means that the model will be trained for 1 epoch. After the training, the system will tell you the performance of the model. The results of the training is shown in Figure 5.
 
+![the-training-results](image5.png)
 
+Figure 5: The training results.
 
+The GPU used in my laptop is "NVIDIA GeForce RTX 3060 Laptop", and the time spent on training the model is around 1 minute, actually I trained the model by using my CPU which is "AMD Ryzen 7 5800H with Radeon Graphics", the time spent on training is around 6~7 minutes for 1 epoch, so when we are needed to training a model, GPU is a better choice.
 
+We find that the performance of our model is pretty good, the `error rate` even lower than 0.01, the train loss and valid loss mean how many images in training set and validation set are not enrolled into the model training.
 
 
 
