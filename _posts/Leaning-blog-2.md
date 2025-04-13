@@ -70,6 +70,13 @@ This page should be like Figure 4.
 
 Figure 4: The CUDA Toolkit Download page.
 
+### 5. cuDNN 
+
+The next step is to download the cuDNN archive, this is a GPU-accelerated library of primitives for deep neural networks. The link is here:
+
+ - [cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive)
+
+After we opened this link, the page should be like Figure 5.
 
 
 
