@@ -63,6 +63,39 @@ from fastai import *
 
 This is because the functions we need is under the class vision, fastai is more like a top level of the function we need, so if we just import fastai library, we will fail in our training.
 
+The second line of the training code is 
+
+```python
+path = untar_data(URLs.PETS)/'images'
+```
+This line can help us download the dataset we need for the training, the variable `path` is the location address of the images, the model will find the images according to this address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
