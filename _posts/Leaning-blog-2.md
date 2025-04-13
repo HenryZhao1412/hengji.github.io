@@ -36,7 +36,7 @@ After we opened the link, the website should be like Figure 2.
 
 Figure 2: The NVIDIA Driver download website page.
 
-According to our devices, we can select the suitable Driver to download. My GPU is `NVIDIA GeForce RTX 3060 Laptop GPU`, just select the one we have and then choose the system we are using and then download it.
+According to our devices, we can select the suitable Driver to download. My GPU is `NVIDIA GeForce RTX 3060 Laptop GPU`, just select the one we have and then choose the system we are using and then download it. Remember to download the latest version of Driver.
 
 
 
