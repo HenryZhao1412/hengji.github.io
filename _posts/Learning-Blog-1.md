@@ -111,6 +111,13 @@ The second parameter in the function is `resnet34` is a pretrained model, the nu
 
 The third parameter `metrics=error_rate` is the evaluation indicator, this will tell you the performance of the trained model is good or not.
 
+After we finished building the model, we should start our training, the code is:
+
+```python
+learn.fine_tune(1)
+```
+This is the training process, the parameter inside the function '1' means that the model will be trained for 1 epoch. After the training, the system will tell you the performance of the model. The results of the training is shown in Figure 5.
+
 
 
 
