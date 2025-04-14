@@ -81,10 +81,11 @@ im.to_thumb(256,256)
 
 Then the result of running these code is shown in Figure 3.
 
+![url-downloaded-image](blog-3-images/image3.png)
 
+Figure 3: The downloaded image of `search_image` example.
 
-
-
+In this part of code, we imported a function named `download_url` from the `fastdownload` library. This Function can download the images according to the urls to our own folders, the second parameter `dest` is the filename of the downloaded image. If the image is in the same directory of the current code file, we can just use the filename we assigned for this image to open it, just like the sixth line of the Python code we just plotted.
 
 
 
