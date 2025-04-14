@@ -166,6 +166,14 @@ The `squish` method is stretch or compressimage to a target size (like 192x192 i
 
 Figure 5: The images in the dataloader we built.
 
+Then we start to train our model, the corresponding code is here:
+
+```python
+learn = vision_learner(dls, resnet18, metrics=error_rate)
+learn.fine_tune(3)
+```
+
+We trained this model for 3 epoches, and use the `error_rate` method to monitor the performance of the model, Figure 6 shows the exact process of the training.
 
 
 
