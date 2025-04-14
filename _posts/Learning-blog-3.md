@@ -181,7 +181,15 @@ Figure 6: The training process.
 
 We used the pretrained model `resnet18` for training and finally the `error_rate` reduced from 0.026588 to 0.017725 through the 3 epoches.
 
+## Use the model
 
+```python
+is_bird,_,probs = learn.predict(PILImage.create('bird.jpg'))
+print(f"This is a: {is_bird}.")
+print(f"Probability it's a bird: {probs[0]:.4f}")
+```
+
+These code is to use the bird image we just downloaded to test the model performance, the result is shown in Figure 7.
 
 
 
