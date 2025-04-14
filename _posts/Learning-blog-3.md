@@ -160,7 +160,7 @@ dls.show_batch(max_n=6)
 ```
 These code used the `seed=42` do divide the dataset into validation set and training set, 20% of the dataset images belong to validation set and the rest belong to the training set.
 
-
+The `squish` method is stretch or compressimage to a target size (like 192x192 in this code) without preserving the original aspect ratio.
 
 
 
