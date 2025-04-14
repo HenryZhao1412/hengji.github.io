@@ -191,9 +191,11 @@ print(f"Probability it's a bird: {probs[0]:.4f}")
 
 These code is to use the bird image we just downloaded to test the model performance, the result is shown in Figure 7.
 
+![model-test](blog-3-images/image7.png)
 
+Figure 7: The performance of our model
 
-
+We find the performance of our model is good.
 
 
 
