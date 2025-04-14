@@ -96,9 +96,9 @@ Image.open('woodlands.jpg').to_thumb(256,256)
 
 And the result of running this code is shown in Figure 4.
 
+![search-woodland-image](blog-3-images/image4.png)
 
-
-
+Figure 4: Seach 1 image of woodland.
 
 
 
