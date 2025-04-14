@@ -14,17 +14,46 @@ except socket.error as ex: raise Exception("STOP: No internet. Click '>|' in top
 
 This step is to check if the device can connect to the Internet. In this file, it requires us to download the images from internet and then use the downloaded images to train this model. So, check internet connection is important, the result of not connecting, we will see the Figure 1 after we run the later codes.
 
+![Internet-error](blog-3-images/image1.png)
 
+Figure 1: The code runing without Internet.
 
+## Check the environment
 
+Here is the Python code:
 
+```python
+import os
+iskaggle = os.environ.get('KAGGLE_KERNEL_RUN_TYPE', '')
 
+if iskaggle:
+    !pip install -Uqq fastai
+```
 
+This step is checking if the code is running under the Kaggle environment, if it is, the code will intall the latest fastai library automatically, the parameter `-U` means intall the latest version. If the fastai is not the latest version, this code will also update the fastai to the latest version as well.
 
+## Download images from internet by using `duckduckgo_search`
 
+### Install the `duckduckgo_serach` library
 
+```python
+!pip install -Uqq duckduckgo_search
+```
+This code can install the `duckduckgo_search` library if this library was not installed in the larptop, if your computer already has this library, skip this line of code.
 
+### Define the searching function
 
+```python
+from duckduckgo_search import DDGS
+from fastcore.all import *
+
+ddgs = DDGS()
+
+def search_images(term, max_images=200):
+    return L(ddgs.images(term, max_results=max_images)).itemgot('image')
+```
+
+This code is defining the function
 
 
 
