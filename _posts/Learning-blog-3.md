@@ -55,6 +55,13 @@ def search_images(term, max_images=200):
 
 This code is defining the function that used to search the images for model training. It will return an array that contains the URLs of the images, we can set the number of images he searches for according to our needs, and if we do not give a specific number of images, this function will search 200 images in default.
 
+Here is the example of using this function and we asked this function to search 1 image.
+
+```python
+urls = search_images('bird photos', max_images=1)
+urls[0]
+```
+The Figure 2 shows the result of this code performed in my laptop.
 
 
 
