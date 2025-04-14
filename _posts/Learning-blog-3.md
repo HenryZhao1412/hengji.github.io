@@ -63,12 +63,23 @@ urls[0]
 ```
 The Figure 2 shows the result of this code performed in my laptop.
 
+![search-image-perform](blog-3-images/image2.png)
 
+Figure 2: The result of running function `search_images`.
 
+According to Figure 2, we find that result is an url of image, we can not read any information for this link, then we need to show this image, it will use the following code.
 
+```python
+from fastdownload import download_url
+dest = 'bird.jpg'
+download_url(urls[0], dest, show_progress=False)
 
+from fastai.vision.all import *
+im = Image.open(dest)
+im.to_thumb(256,256)
+```
 
-
+Then the result of running these code is shown in Figure 3.
 
 
 
