@@ -100,8 +100,9 @@ And the result of running this code is shown in Figure 4.
 
 Figure 4: Seach 1 image of woodland.
 
+## Build the dataset for training.
 
-
+Training set is necessary for Python training, in this file we are required to download the images by ourselves, so we need to use the function `search_images` to search images for training.
 
 
 
