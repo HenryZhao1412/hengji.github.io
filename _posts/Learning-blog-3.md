@@ -133,10 +133,32 @@ Then the code will start to download the images, it will create 2 sub folders un
 
 This step might take some time, my laptop spent 4 minutes and 21.4 seconds on this step.
 
+## Train the model
 
+Before we start our training, we should delete the failed images in our image folders. The code is here:
 
+```python
+failed = verify_images(get_image_files(path))
+failed.map(Path.unlink)
+len(failed)
+```
 
+This step will help us delete the failed images and how many failed images deleted.
 
+The next step is to build the data loader, the code is here:
+
+```python
+dls = DataBlock(
+    blocks=(ImageBlock, CategoryBlock), 
+    get_items=get_image_files, 
+    splitter=RandomSplitter(valid_pct=0.2, seed=42),
+    get_y=parent_label,
+    item_tfms=[Resize(192, method='squish')]
+).dataloaders(path)
+
+dls.show_batch(max_n=6)
+```
+These code used the `seed=42` do divide the dataset into validation set and training set, 20% of the dataset images belong to validation set and the rest belong to the training set.
 
 
 
