@@ -12,7 +12,7 @@ try:
 except socket.error as ex: raise Exception("STOP: No internet. Click '>|' in top right and set 'Internet' switch to on")
 ```
 
-This step is to check if the device can connect to the Internet. In this file, it requires us to download the images from internet and then use the downloaded images to training the model.
+This step is to check if the device can connect to the Internet. In this file, it requires us to download the images from internet and then use the downloaded images to train this model. So, check internet connection is important, the result of not connecting, we will see the Figure 1 after we run the later codes.
 
 
 
