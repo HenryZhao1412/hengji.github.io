@@ -175,7 +175,11 @@ learn.fine_tune(3)
 
 We trained this model for 3 epoches, and use the `error_rate` method to monitor the performance of the model, Figure 6 shows the exact process of the training.
 
+![training-process](blog-3-images/image6.png)
 
+Figure 6: The training process.
+
+We used the pretrained model `resnet18` for training and finally the `error_rate` reduced from 0.026588 to 0.017725 through the 3 epoches.
 
 
 
