@@ -53,7 +53,7 @@ def search_images(term, max_images=200):
     return L(ddgs.images(term, max_results=max_images)).itemgot('image')
 ```
 
-This code is defining the function
+This code is defining the function that used to search the images for model training. It will return an array that contains the URLs of the images, we can set the number of images he searches for according to our needs, and if we do not give a specific number of images, this function will search 200 images in default.
 
 
 
