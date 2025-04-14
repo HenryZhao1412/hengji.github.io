@@ -102,7 +102,60 @@ Figure 4: Seach 1 image of woodland.
 
 ## Build the dataset for training.
 
-Training set is necessary for Python training, in this file we are required to download the images by ourselves, so we need to use the function `search_images` to search images for training.
+Training set is necessary for Python training, in this file we are required to download the images by ourselves, so we need to use the function `search_images` to search images for training. Here is the Python code.
+
+```python
+searches = 'woodlands','bird'
+path = Path('bird_or_not')
+from time import sleep
+import os
+from glob import glob
+
+for o in searches:
+    dest = (path/o)
+    dest.mkdir(exist_ok=True, parents=True)
+    download_images(dest, urls=search_images(f'{o} photo'))
+    sleep(10)  # Pause between searches to avoid over-loading server
+    download_images(dest, urls=search_images(f'{o} sun photo'))
+    sleep(10)
+    download_images(dest, urls=search_images(f'{o} shade photo'))
+    sleep(10)
+    for file in glob(f"{dest}/*.fpx"): # remove fpx files which cause problems with resize_images
+        os.unlink(file)
+    resize_images(path/o, max_size=400, dest=path/o)
+```
+
+The variable `searches` is the target object we want to search, this model should be able to determine an object is bird or woodland, then we define the `searches` variable to let model search images automatically.
+
+`path` is folder's name, this folder should contains the images downloaded from internet, if there is not folder named `bird_or_not` in current directory, the system will create one.
+
+Then the code will start to download the images, it will create 2 sub folders under the `bird_or_not` folder named `woodlands` and `bird` respectively. And then the code will download 200 images each with the specific item. Also, if we download the `.fpx` images, the system will delete the file automatically because our system can not resize the image. Finally, the image will be resize to 400x400.
+
+This step might take some time, my laptop spent 4 minutes and 21.4 seconds on this step.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
